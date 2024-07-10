@@ -48,6 +48,18 @@ mkfifo _data_control/bw_delay_sync_iq
 mkfifo _data_control/fw_delay_sync_hwc
 mkfifo _data_control/bw_delay_sync_hwc
 
+chmod 777 _data_control/fw_decimator_in
+chmod 777 _data_control/bw_decimator_in
+
+chmod 777 _data_control/fw_decimator_out
+chmod 777 _data_control/bw_decimator_out
+
+chmod 777 _data_control/fw_delay_sync_iq
+chmod 777 _data_control/bw_delay_sync_iq
+
+chmod 777 _data_control/fw_delay_sync_hwc
+chmod 777 _data_control/bw_delay_sync_hwc
+
 # Remove old log files
 rm _logs/*.log 2> /dev/null
 
